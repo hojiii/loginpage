@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
@@ -15,7 +15,6 @@ db = client.dbsparta
 SECRET_KEY ='login'
 
 #첫화면
-=======
 import certifi
 from pymongo import MongoClient
 from flask import Flask, render_template, request, jsonify
@@ -27,24 +26,24 @@ ca = certifi.where()
 client = MongoClient('mongodb+srv://test:sparta@cluster0.0x2me9v.mongodb.net/?retryWrites=true&w=majority', tlsCAFile=ca)
 db = client.dbsparta
 
->>>>>>> 9b110fbefb4326b6e05502c0fca8806117e0a7a3
+
 @app.route('/')
 def home():
     return render_template('index.html')
 
-<<<<<<< HEAD
+
 # 로그인 성공시 이동 화면 등록
-=======
+
 @app.route('/signup')
 def signup():
     return render_template('signup.html')
 
->>>>>>> 9b110fbefb4326b6e05502c0fca8806117e0a7a3
+
 @app.route('/detail')
 def detail():
     return render_template('detail.html')
 
-<<<<<<< HEAD
+
 #일치 여부 확인하기
 
 # [로그인 API]
